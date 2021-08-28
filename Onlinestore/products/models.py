@@ -12,4 +12,4 @@ class Product(models.Model):
 class Offers(models.Model):
     offrname=models.CharField(max_length=255)
     offramt=models.FloatField()
-    
+     

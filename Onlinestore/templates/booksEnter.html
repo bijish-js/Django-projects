@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<h1>Enter Book info</h1>
+<form action="enterOpr" method="post">
+
+    {% csrf_token %}
+    Account no. :<input type="text" name="accno">
+    Title:<input type="text" name="title">
+    Author :<input type="text" name="author">
+
+    <input type="submit">
+</form>
+
+{% endblock %}
