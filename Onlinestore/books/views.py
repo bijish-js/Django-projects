@@ -24,8 +24,7 @@ def enterOpr(request):
     obj.author=author
     obj.save()
     
-    return HttpResponse("record created successfully")
-
+    return render(request,'RecordAdded.html')
 
 def booksSearch(request):
     

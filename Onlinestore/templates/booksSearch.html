@@ -5,13 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books Home</title>
+    <style>
+        input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+          
+          input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+          
+          #container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            max-width:600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:200px;
+          }
+    </style>
 </head>
-<body>
+<body> <div id="container">
     <form action="searchOpr" method="post">
         {% csrf_token %}
 
-        Enter search Query:<input type="text" name="searchtext">
+        <h1>Enter search Query:</h1><input type="text" name="searchtext">
         <input type="submit">
     </form>
+</div>
 </body>
 </html>
