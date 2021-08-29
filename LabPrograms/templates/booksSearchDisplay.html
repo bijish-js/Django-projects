@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        #table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          #table td, #table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+          }
+          
+          #table tr:nth-child(even){background-color: #f2f2f2;}
+          
+          #table tr:hover {background-color: #ddd;}
+          
+          #table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+          }
+          #container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            max-width:600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:200px;
+          }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Search Results:</h1>
+    <table id="table">
+        <tr>
+            <th>Acc.No.</th>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{book.accno}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

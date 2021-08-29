@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          
+          #button2 {background-color: #008CBA;} 
+          #container {
+             display: flex;
+             justify-content:center;
+             max-width:400px; 
+             margin-left: auto;
+             margin-right: auto;
+             margin-top:300px;
+             background-color: #f2f2f2;
+             height:100px;
+             vertical-align:middle;
+
+          }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <form action="studententer">
+    
+        <input type="submit" value="Enter Student details" class="button">
+    </form>
+    <form action="studentgrade">
+    
+        <input type="submit" value="View grade " class="button" id="button2">
+    </form>
+</div>
+</body>
+</html>
